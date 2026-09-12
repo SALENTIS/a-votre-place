@@ -1,11 +1,116 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Comment ça marche — Sur Place Pour Vous</title><meta name="description" content="Comment ça marche">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Simple par conception</div><h1>Vous demandez. Quelqu’un intervient.</h1><p>Le client ne propose pas de prix. Le tarif est défini par la plateforme et présenté avant la confirmation.</p></div></section>
-<section class="section"><div class="wrap"><div class="steps"><div class="step"><b>01</b><h3>Décrire</h3><p>Service, adresse, date, horaire, durée et informations utiles.</p></div><div class="step"><b>02</b><h3>Rechercher</h3><p>Choisissez un visiteur disponible ou laissez une demande au réseau.</p></div><div class="step"><b>03</b><h3>Confirmer</h3><p>Le prix et le périmètre sont connus avant paiement.</p></div><div class="step"><b>04</b><h3>Recevoir</h3><p>Le visiteur réalise la mission et transmet les éléments prévus.</p></div></div></div></section>
-<section class="section soft"><div class="wrap"><div class="eyebrow">Questions fréquentes</div><div class="faq"><div><b>Qui réalise la mission ?</b><p>Un visiteur indépendant inscrit sur la plateforme, correspondant aux critères de la mission.</p></div><div><b>Puis-je demander des photos en plus d’une ouverture ?</b><p>Oui. Le parcours est prévu pour permettre de combiner les services lorsque cela a du sens.</p></div><div><b>Quand le visiteur est-il payé ?</b><p>Le modèle cible prévoit un paiement après réalisation et validation de la mission.</p></div></div></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment ça marche — Sur Place Pour Vous</title>
+<meta name="description" content="Le fonctionnement de Sur Place Pour Vous, côté client et côté visiteur : demande, mise en relation, tarif fixe, mission encadrée.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/comment-ca-marche.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html" class="active">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Comment ça marche</div>
+    <h1>Vous décrivez. Quelqu'un intervient.</h1>
+    <p class="lede">Un parcours simple, pensé pour que vous sachiez toujours ce qui va se passer, et à quel prix.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Côté client</h2></div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="num">1</div><h3>Décrivez</h3>
+        <p>Service, ville, adresse, date, heure, durée et détails de la mission.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">2</div><h3>Choisissez</h3>
+        <p>Recherchez une personne déjà disponible ou créez une demande ouverte.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">3</div><h3>Validez</h3>
+        <p>Vous voyez un tarif fixe, vous validez un visiteur, vous payez avant la mission.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">4</div><h3>Suivez</h3>
+        <p>Échangez via la messagerie interne, recevez le compte rendu, validez la mission.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Côté visiteur</h2>
+      <p>Devenir visiteur suppose un profil vérifié et un cadre de mission clair.</p>
+    </div>
+    <ul class="list-clean">
+      <li>Un profil public : photo, prénom, âge, ville, profession, présentation et disponibilités.</li>
+      <li>Une vérification d'identité et de domicile avant toute première mission.</li>
+      <li>Une messagerie interne pour échanger avec le client sans partager ses coordonnées personnelles au départ.</li>
+      <li>Un paiement de la mission géré par la plateforme, jamais négocié directement avec le client.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Le cadre de confiance</h2>
+      <p>Ce qui distingue une intervention encadrée d'un simple échange de services entre particuliers.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Identité vérifiée</h3><p>Chaque visiteur confirme son identité avant de pouvoir intervenir.</p></div>
+      <div class="trust-item"><h3>Domicile vérifié</h3><p>Son adresse est également contrôlée, pour plus de sérieux.</p></div>
+      <div class="trust-item"><h3>Paiement sécurisé</h3><p>Réglé avant la mission, jamais négocié sur place.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap final-cta">
+    <h2>Prêt à essayer ?</h2>
+    <div class="ctas">
+      <a class="btn btn-primary" href="demande.html">Créer une demande</a>
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>

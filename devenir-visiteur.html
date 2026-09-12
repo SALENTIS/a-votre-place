@@ -1,10 +1,114 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Devenir visiteur — Sur Place Pour Vous</title><meta name="description" content="Devenir visiteur">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Pour les intervenants</div><h1>Devenir visiteur</h1><p>Vous êtes fiable, ponctuel et mobile ? Réalisez des missions près de chez vous et soyez rémunéré pour votre présence.</p></div></section>
-<section class="section"><div class="wrap"><div class="cards"><div class="service"><div class="icon">✓</div><div><h3>Profil vérifié</h3><p>Le profil pourra comporter des badges d’identité et de domicile vérifiés.</p></div></div><div class="service"><div class="icon">📍</div><div><h3>Choisissez votre zone</h3><p>Indiquez les villes et secteurs dans lesquels vous pouvez intervenir.</p></div></div></div><div class="actions"><a class="btn" href="inscription-v.html">Créer mon profil</a></div></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devenir visiteur — Sur Place Pour Vous</title>
+<meta name="description" content="Devenez visiteur Sur Place Pour Vous : intervenez ponctuellement près de chez vous, à votre rythme, pour des missions encadrées et payées à l'avance.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/devenir-visiteur.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html" style="border-color:var(--ink);">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Devenir visiteur</div>
+    <h1>Soyez la personne qui peut être là.</h1>
+    <p class="lede">Intervenez ponctuellement près de chez vous — ouverture, photos ou vidéo — pour des missions encadrées, à un tarif fixé à l'avance.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2 style="font-size:1.6rem;">Votre profil public</h2>
+      <p style="margin-top:14px; color:var(--ink-soft);">Ce que les clients voient de vous, sans jamais vos informations sensibles.</p>
+      <ul class="list-clean" style="margin-top:18px;">
+        <li>Photo, prénom, âge, ville ou zone d'intervention.</li>
+        <li>Profession, présentation libre, éventuellement une courte vidéo.</li>
+        <li>Services proposés et disponibilités.</li>
+        <li>Badges « Identité vérifiée » et « Domicile vérifié ».</li>
+      </ul>
+      <p style="margin-top:18px; font-size:0.9rem; color:var(--ink-soft);">Votre adresse exacte, votre téléphone, votre email et vos documents ne sont jamais affichés publiquement.</p>
+    </div>
+    <div class="mission-card">
+      <h2>Rejoindre en tant que visiteur</h2>
+      <div class="field-row">
+        <label for="prenom">Prénom</label>
+        <input id="prenom" type="text" placeholder="Votre prénom">
+      </div>
+      <div class="field-row">
+        <label for="ville-v">Ville / zone d'intervention</label>
+        <input id="ville-v" type="text" placeholder="Bordeaux">
+      </div>
+      <div class="field-row">
+        <label for="services-v">Services proposés</label>
+        <select id="services-v">
+          <option>Ouverture à votre place</option>
+          <option>Photos & vidéo à votre place</option>
+          <option>Les deux</option>
+        </select>
+      </div>
+      <a href="inscription-v.html" class="btn btn-primary" style="width:100%; margin-top:22px;">Continuer l'inscription</a>
+      <p class="mission-alt">Une vérification d'identité et de domicile sera demandée avant votre première mission.</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Ce que la plateforme encadre pour vous</h2>
+      <p>Vous n'avez pas à négocier ni à gérer le paiement directement avec le client.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Tarif fixé</h3><p>Le prix de la mission est connu avant que vous ne l'acceptiez.</p></div>
+      <div class="trust-item"><h3>Messagerie interne</h3><p>Vous échangez avec le client sans donner votre numéro ni votre email dès le départ.</p></div>
+      <div class="trust-item"><h3>Paiement encadré</h3><p>Le client règle avant la mission, la plateforme organise votre rémunération.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap final-cta">
+    <h2>Prêt à devenir visiteur ?</h2>
+    <div class="ctas">
+      <a class="btn btn-primary" href="inscription-v.html">Créer mon profil</a>
+      <a class="btn btn-ghost" href="comment-ca-marche.html">Voir le fonctionnement</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>

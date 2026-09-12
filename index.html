@@ -1,24 +1,242 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Quelqu’un peut être là pour vous — Sur Place Pour Vous</title><meta name="description" content="Une personne disponible sur place pour ouvrir un logement, prendre des photos ou réaliser une vidéo à votre place.">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="hero"><div class="wrap hero-grid"><div>
-<div class="eyebrow">Votre présence, à distance</div>
-<h1>Quelqu’un peut être <em>là pour vous.</em></h1>
-<p class="lead">Besoin d’ouvrir un logement, de prendre des photos ou de filmer sur place ? Sur Place Pour Vous met en relation votre besoin avec une personne disponible près du lieu.</p>
-<div class="actions"><a class="btn" href="demande.html">J’ai besoin de quelqu’un</a><a class="btn ghost" href="devenir-visiteur.html">Je veux devenir visiteur</a></div>
-<div class="proof"><span>✓ Profils vérifiés</span><span>✓ Tarifs annoncés</span><span>✓ Mission encadrée</span></div>
-</div><div class="visual"><div class="illustration"><div class="sky"></div><div class="sun"></div><div class="house"><div class="window"></div></div><div class="person"><div class="head"></div><div class="body"></div><div class="arm"></div><div class="phone"></div></div><div class="pin">●</div></div><div class="visual-caption"><div><b>Votre mission</b><br><span>Quelqu’un est sur place</span></div><div class="check">✓</div></div></div>
-</div></section>
-<section id="services" class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Nos services</div><h2>Deux besoins. Une solution.</h2></div><p>Un fonctionnement volontairement simple : vous décrivez la mission, vous recherchez une personne disponible ou vous créez une demande.</p></div>
-<div class="cards"><a class="service" href="ouverture.html"><div class="icon">🔑</div><div><h3>Ouverture à votre place</h3><p>Ouvrir un logement pour un artisan, une agence, un prestataire ou une autre personne autorisée.</p><span>Découvrir →</span></div></a>
-<a class="service" href="photos-video.html"><div class="icon">📸</div><div><h3>Photos & vidéos à votre place</h3><p>Obtenir des photos ou une vidéo d’un bien lorsque vous ne pouvez pas vous déplacer.</p><span>Découvrir →</span></div></a></div></div></section>
-<section class="section soft"><div class="wrap"><div class="eyebrow">Comment ça marche</div><h2>Vous demandez. Quelqu’un intervient.</h2>
-<div class="steps"><div class="step"><b>01</b><h3>Décrivez</h3><p>Lieu, date, horaire et besoin.</p></div><div class="step"><b>02</b><h3>Trouvez</h3><p>Recherchez une personne ou créez une demande.</p></div><div class="step"><b>03</b><h3>Validez</h3><p>Le tarif est connu avant la mission.</p></div><div class="step"><b>04</b><h3>Recevez</h3><p>Le visiteur intervient et transmet le résultat.</p></div></div></div></section>
-<section class="section"><div class="wrap video-grid"><div><div class="eyebrow">En 45 secondes</div><h2>Pas besoin d’être sur place.</h2><p>Une vidéo courte expliquera le service, les étapes et le principe de confiance. Le lecteur ci-contre est prêt à accueillir la vraie vidéo.</p><a class="btn" href="comment-ca-marche.html">Voir le fonctionnement</a></div><div class="video"><div class="play">▶</div><b>VIDÉO EXPLICATIVE</b><small>À intégrer avant lancement</small></div></div></section>
-<section class="trust"><div class="wrap trust-grid"><div><div class="eyebrow">La confiance d’abord</div><h2>Une présence physique avec un cadre clair.</h2></div><div class="trust-items"><p><b>✓ Identité vérifiée</b><br>Des badges permettent d’identifier les profils vérifiés.</p><p><b>✓ Mission définie</b><br>Le périmètre de l’intervention est précisé avant validation.</p><p><b>✓ Paiement encadré</b><br>Le parcours de paiement sera intégré à la plateforme.</p></div></div></section>
-<section class="cta"><div class="wrap"><h2>Besoin de quelqu’un sur place ?</h2><p>Commencez par décrire votre besoin.</p><a class="btn light" href="demande.html">Créer une demande</a></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quelqu'un peut être là pour vous — Sur Place Pour Vous</title>
+<meta name="description" content="Ouverture de logement, photos ou vidéo sur place : décrivez votre besoin, une personne vérifiée s'en charge à votre place, partout en France.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Quelqu'un peut être là pour vous.</h1>
+      <p class="lede">Un logement à ouvrir, des photos ou une vidéo à réaliser, et personne pour s'en charger ? Sur Place Pour Vous met votre besoin en relation avec une personne vérifiée, présente près du lieu.</p>
+      <div class="badges">
+        <span class="badge">Identité vérifiée</span>
+        <span class="badge">Tarif connu à l'avance</span>
+        <span class="badge">Mission encadrée</span>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <h2>Besoin d'ouvrir un appartement demain à Bordeaux ?</h2>
+      <p class="sub">Décrivez votre besoin, une personne disponible s'en charge à votre place.</p>
+
+      <div class="field-row">
+        <label for="service">Service</label>
+        <select id="service">
+          <option>Ouverture à votre place</option>
+          <option>Photos à votre place</option>
+          <option>Vidéo à votre place</option>
+          <option>Photos + vidéo à votre place</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <label for="ville">Ville</label>
+        <input id="ville" type="text" placeholder="Bordeaux">
+      </div>
+
+      <div class="field-row field-pair">
+        <div>
+          <label for="date">Date</label>
+          <input id="date" type="date">
+        </div>
+        <div>
+          <label for="heure">Heure</label>
+          <input id="heure" type="time">
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label for="duree">Durée</label>
+        <select id="duree">
+          <option>30 minutes</option>
+          <option>1 heure</option>
+          <option>2 heures</option>
+        </select>
+      </div>
+
+      <a href="recherche.html" class="btn btn-primary">Trouver quelqu'un</a>
+      <p class="mission-alt">Vous ne trouvez personne dans l'immédiat ? <a href="demande.html">Créez une demande</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Deux besoins, une même solution.</h2>
+      <p>Un fonctionnement volontairement simple : vous décrivez la mission, vous recherchez une personne disponible ou vous créez une demande.</p>
+    </div>
+    <div class="services">
+      <div class="service-card">
+        <div class="mark">🔑</div>
+        <h3>Ouverture à votre place</h3>
+        <p>Ouvrir un logement pour un artisan, une agence, un prestataire ou toute autre personne autorisée à entrer.</p>
+        <a class="link" href="ouverture.html">Découvrir le service</a>
+      </div>
+      <div class="service-card">
+        <div class="mark">📷</div>
+        <h3>Photos & vidéo à votre place</h3>
+        <p>Obtenir des photos ou une vidéo d'un bien lorsque vous ne pouvez pas vous déplacer vous-même.</p>
+        <a class="link" href="photos-video.html">Découvrir le service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Vous décrivez. Quelqu'un intervient.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="num">1</div>
+        <h3>Décrivez</h3>
+        <p>Lieu, date, horaire et besoin précis.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">2</div>
+        <h3>Trouvez</h3>
+        <p>Recherchez une personne disponible ou créez une demande.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">3</div>
+        <h3>Validez</h3>
+        <p>Le tarif est connu et réglé avant la mission.</p>
+      </div>
+      <div class="process-item">
+        <div class="num">4</div>
+        <h3>Recevez</h3>
+        <p>Le visiteur intervient et vous transmet le résultat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Une présence encadrée, pas une improvisation.</h2>
+      <p>Chaque intervention repose sur un profil vérifié et un cadre clair, connu avant la mission.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <h3>Identité vérifiée</h3>
+        <p>Chaque visiteur confirme son identité avant de pouvoir intervenir sur la plateforme.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Domicile vérifié</h3>
+        <p>Son adresse est également contrôlée, pour plus de sérieux et de traçabilité.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Paiement sécurisé</h3>
+        <p>Le montant est réglé avant la mission, jamais négocié une fois sur place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap video-block">
+    <div>
+      <div class="video-frame">
+        <div class="play-dot">▶</div>
+      </div>
+    </div>
+    <div>
+      <h2>Comprendre le principe en 45 secondes.</h2>
+      <p style="margin-top:16px; color:var(--ink-soft);">Une vidéo courte présentera le service, les étapes et le principe de confiance. Elle sera intégrée avant le lancement public.</p>
+      <a class="btn btn-dark" style="margin-top:20px;" href="comment-ca-marche.html">Voir le fonctionnement en détail</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Des tarifs annoncés avant la mission.</h2>
+      <p>Un prix fixe et connu à l'avance, sans négociation sur place.</p>
+    </div>
+    <table class="pricing">
+      <tr><th>Service</th><th style="text-align:right;">Tarif</th></tr>
+      <tr><td>Ouverture — 30 min</td><td class="price">39 €</td></tr>
+      <tr><td>Ouverture — 1 h</td><td class="price">59 €</td></tr>
+      <tr><td>Ouverture — 2 h</td><td class="price">89 €</td></tr>
+      <tr><td>Photos — 30 min</td><td class="price">49 €</td></tr>
+      <tr><td>Vidéo — 30 min</td><td class="price">49 €</td></tr>
+      <tr><td>Photos + vidéo — 1 h</td><td class="price">69 €</td></tr>
+    </table>
+    <p class="pricing-note">Tarifs indicatifs, en cours de test — non définitifs. Frais postaux en sus selon le mode d'envoi choisi pour la remise de clés.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Là où nous intervenons.</h2>
+      <p>Le service démarre dans un nombre limité de villes et s'étend progressivement à mesure que des visiteurs rejoignent la plateforme.</p>
+    </div>
+    <div class="city-chips">
+      <a class="city-chip" href="villes.html">Bordeaux</a>
+      <a class="city-chip" href="villes.html">Toulouse</a>
+      <a class="city-chip" href="villes.html">Marmande</a>
+      <a class="city-chip" href="villes.html">Bientôt d'autres villes</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final-cta">
+      <h2>Besoin de quelqu'un sur place ?</h2>
+      <div class="ctas">
+        <a class="btn btn-primary" href="demande.html">Créer une demande</a>
+        <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">
+    © 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »
+  </div>
+</footer>
+
+</body>
+</html>

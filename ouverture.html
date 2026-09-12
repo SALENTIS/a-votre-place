@@ -1,10 +1,109 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ouverture à votre place — Sur Place Pour Vous</title><meta name="description" content="Ouverture à votre place">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Service</div><h1>Ouverture à votre place</h1><p>Un artisan arrive, un logement doit être ouvert, mais vous ne pouvez pas vous déplacer ? Demandez une présence sur place.</p></div></section>
-<section class="section"><div class="wrap content"><h2>Une mission cadrée</h2><p class="lead">Indiquez l’adresse, le créneau, la durée estimée et les conditions d’accès. Vous pouvez aussi préciser si vous souhaitez profiter de la présence sur place pour réaliser des photos ou une vidéo.</p><div class="actions"><a class="btn" href="demande.html">Créer une demande</a><a class="btn ghost" href="recherche.html">Rechercher un visiteur</a></div></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouverture à votre place — Sur Place Pour Vous</title>
+<meta name="description" content="Une personne vérifiée ouvre un logement à votre place pour un artisan, une agence ou tout prestataire autorisé.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/ouverture.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Ouverture à votre place</div>
+    <h1>Ouverture à votre place</h1>
+    <p class="lede">Un artisan, une agence, un prestataire doit entrer dans un logement et vous ne pouvez pas être là ? Une personne vérifiée ouvre à votre place, dans le créneau que vous choisissez.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2 style="font-size:1.6rem;">Pour qui ?</h2>
+      <ul class="list-clean" style="margin-top:18px;">
+        <li>Propriétaire ou locataire absent au moment d'une intervention.</li>
+        <li>Agence immobilière coordonnant plusieurs visites ou états des lieux.</li>
+        <li>Artisan ou prestataire ayant besoin d'un accès ponctuel.</li>
+      </ul>
+    </div>
+    <div class="mission-card">
+      <h2>Réservez une ouverture</h2>
+      <p class="sub">Indiquez la ville, la date et la durée nécessaire.</p>
+      <a href="demande.html" class="btn btn-primary" style="width:100%; margin-top:20px;">Créer une demande</a>
+      <p class="mission-alt">ou <a href="recherche.html">rechercher une personne disponible</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head"><h2>Tarifs pour ce service</h2></div>
+    <table class="pricing">
+      <tr><th>Durée</th><th style="text-align:right;">Tarif</th></tr>
+      <tr><td>30 minutes</td><td class="price">39 €</td></tr>
+      <tr><td>1 heure</td><td class="price">59 €</td></tr>
+      <tr><td>2 heures</td><td class="price">89 €</td></tr>
+    </table>
+    <p class="pricing-note">Tarifs indicatifs, en cours de test. <a href="tarifs.html">Voir tous les tarifs</a>.</p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Un accès encadré</h2>
+      <p>L'ouverture d'un logement est une mission sensible : elle repose sur un cadre strict.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Identité vérifiée</h3><p>Le visiteur confirme son identité avant chaque mission.</p></div>
+      <div class="trust-item"><h3>Créneau précis</h3><p>L'horaire et la durée sont fixés avant l'intervention.</p></div>
+      <div class="trust-item"><h3>Compte rendu</h3><p>Vous recevez confirmation et compte rendu via la messagerie interne.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap final-cta">
+    <h2>Besoin d'une ouverture ?</h2>
+    <div class="ctas">
+      <a class="btn btn-primary" href="demande.html">Créer une demande</a>
+      <a class="btn btn-ghost" href="photos-video.html">Voir Photos & vidéo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>

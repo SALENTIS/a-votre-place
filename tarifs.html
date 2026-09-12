@@ -1,14 +1,92 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tarifs — Sur Place Pour Vous</title><meta name="description" content="Tarifs des missions de Sur Place Pour Vous.">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Tarifs</div><h1>Des prix simples et lisibles.</h1><p>Première grille de travail. Les montants seront ajustés après les premiers tests terrain et selon les coûts réels des missions.</p></div></section>
-<section class="section"><div class="wrap content"><div class="pricegrid">
-<div class="price"><h3>Ouverture — 30 min</h3><strong>39 €</strong><p>Forfait indicatif.</p></div><div class="price"><h3>Ouverture — 1 h</h3><strong>59 €</strong><p>Forfait indicatif.</p></div>
-<div class="price"><h3>Ouverture — 2 h</h3><strong>89 €</strong><p>Forfait indicatif.</p></div><div class="price"><h3>Photos OU vidéo — 30 min</h3><strong>49 €</strong><p>Forfait indicatif.</p></div>
-<div class="price"><h3>Photos + vidéo — 1 h</h3><strong>69 €</strong><p>Forfait indicatif.</p></div><div class="price"><h3>Frais postaux</h3><strong>Selon envoi</strong><p>Ajoutés uniquement lorsqu’un retour ou un envoi de clé est nécessaire.</p></div>
-</div></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs — Sur Place Pour Vous</title>
+<meta name="description" content="Des tarifs fixes et connus avant la mission : ouverture de logement, photos et vidéo à votre place.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/tarifs.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html" class="active">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Tarifs</div>
+    <h1>Un tarif fixe, connu avant la mission.</h1>
+    <p class="lede">Pas de négociation sur place, pas de surprise à la fin. Le prix affiché est celui que vous payez.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <table class="pricing">
+      <tr><th>Service</th><th style="text-align:right;">Tarif</th></tr>
+      <tr><td>Ouverture — 30 min</td><td class="price">39 €</td></tr>
+      <tr><td>Ouverture — 1 h</td><td class="price">59 €</td></tr>
+      <tr><td>Ouverture — 2 h</td><td class="price">89 €</td></tr>
+      <tr><td>Photos — 30 min</td><td class="price">49 €</td></tr>
+      <tr><td>Vidéo — 30 min</td><td class="price">49 €</td></tr>
+      <tr><td>Photos + vidéo — 1 h</td><td class="price">69 €</td></tr>
+    </table>
+    <p class="pricing-note">Tarifs indicatifs, en cours de test — non définitifs. Frais postaux en sus selon le mode d'envoi choisi pour la remise de clés (boîte à clés, dépôt tiers, envoi postal).</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>En cas de dépassement</h2>
+      <p>Une règle simple, sans système d'autorisation compliqué en temps réel.</p>
+    </div>
+    <ul class="list-clean">
+      <li>La durée choisie au moment de la demande couvre la mission dans la grande majorité des cas.</li>
+      <li>En cas de dépassement, un palier supplémentaire clair s'applique — communiqué avant toute intervention, jamais décidé après coup.</li>
+      <li>Aucune négociation entre le client et le visiteur : le cadre est fixé par la plateforme.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap final-cta">
+    <h2>Prêt à décrire votre besoin ?</h2>
+    <div class="ctas">
+      <a class="btn btn-primary" href="demande.html">Créer une demande</a>
+      <a class="btn btn-ghost" href="recherche.html">Rechercher une personne</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>

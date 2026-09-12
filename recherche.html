@@ -1,10 +1,96 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rechercher un visiteur — Sur Place Pour Vous</title><meta name="description" content="Rechercher un visiteur">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Client</div><h1>Rechercher une personne disponible.</h1><p>Choisissez votre zone et votre service. Les profils exacts seront affichés lorsque le réseau sera connecté.</p></div></section>
-<section class="section"><div class="wrap content"><form><label>Ville<input placeholder="Ex. Bordeaux"></label><label>Service<select><option>Ouverture</option><option>Photos</option><option>Vidéo</option></select></label><label>Date<input type="date"></label><button class="btn" type="button">Rechercher</button></form></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rechercher une personne — Sur Place Pour Vous</title>
+<meta name="description" content="Recherchez une personne vérifiée disponible près du lieu de votre mission.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/recherche.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Rechercher une personne</div>
+    <h1>Personnes disponibles près de vous.</h1>
+    <p class="lede">Exemples de profils vérifiés pour illustrer le rendu — ces fiches seront alimentées par les vrais visiteurs inscrits.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="result-list">
+      <div class="result-card">
+        <div class="who">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Camille R. <span class="verified-tag">✓ Identité vérifiée · ✓ Domicile vérifié</span></div>
+            <div class="meta">Bordeaux · Ouverture, Photos & vidéo · Disponible cette semaine</div>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="demande.html">Voir le profil</a>
+      </div>
+      <div class="result-card">
+        <div class="who">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Yanis B. <span class="verified-tag">✓ Identité vérifiée · ✓ Domicile vérifié</span></div>
+            <div class="meta">Toulouse · Ouverture à votre place · Disponible sous 48h</div>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="demande.html">Voir le profil</a>
+      </div>
+      <div class="result-card">
+        <div class="who">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Inès D. <span class="verified-tag">✓ Identité vérifiée · ✓ Domicile vérifié</span></div>
+            <div class="meta">Marmande · Photos & vidéo à votre place · Disponible ce week-end</div>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="demande.html">Voir le profil</a>
+      </div>
+    </div>
+
+    <div class="mission-card" style="margin-top:40px; max-width:100%;">
+      <h2>Personne ne correspond à votre besoin ?</h2>
+      <p class="sub">Créez une demande ouverte : les visiteurs disponibles pourront y répondre.</p>
+      <a href="demande.html" class="btn btn-primary" style="width:auto; margin-top:18px; display:inline-flex;">Créer une demande</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>

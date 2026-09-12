@@ -1,10 +1,107 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Créer une demande — Sur Place Pour Vous</title><meta name="description" content="Créer une demande">
-<link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav">
-<a class="brand" href="index.html"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></a>
-<nav class="navlinks"><a href="index.html#services">Services</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="tarifs.html">Tarifs</a><a href="villes.html">Villes</a></nav>
-<div class="nav-actions"><a href="recherche.html">Rechercher</a><a class="btn small" href="demande.html">Créer une demande</a></div>
-</div></header><main><section class="subhero"><div class="wrap"><div class="eyebrow">Client</div><h1>Décrivez ce dont vous avez besoin.</h1><p>Vous ne proposez pas de prix. Nous utilisons une grille tarifaire et recherchons une personne disponible.</p></div></section>
-<section class="section"><div class="wrap content"><form><label>Service<select><option>Ouverture à votre place</option><option>Photos</option><option>Vidéo</option><option>Photos + vidéo</option></select></label><label>Ville<input placeholder="Ex. Bordeaux"></label><label>Adresse<input placeholder="Adresse de la mission"></label><label>Date<input type="date"></label><label>Horaire souhaité<input placeholder="Ex. 14h–15h"></label><label>Informations utiles<textarea rows="5" placeholder="Accès, consignes, contexte…"></textarea></label><button class="btn" type="button">Rechercher une personne</button></form></div></section></main><footer><div class="wrap footer"><div class="brand"><span class="mark">SP</span><span>Sur Place<br><b>Pour Vous</b></span></div>
-<div class="footer-links"><a href="tarifs.html">Tarifs</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="devenir-visiteur.html">Devenir visiteur</a><a href="villes.html">Villes</a></div>
-<div><small>Prototype — identité et tarifs à finaliser avant lancement.</small></div></div></footer><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Créer une demande — Sur Place Pour Vous</title>
+<meta name="description" content="Décrivez votre besoin : un visiteur vérifié vous répondra avec un tarif fixe, sans engagement avant validation.">
+<link rel="canonical" href="https://a-votre-place.vercel.app/demande.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="devenir-visiteur.html">Devenir visiteur</a>
+      <a class="btn btn-primary" href="demande.html" style="background:var(--brass-dark);">Trouver quelqu'un</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Créer une demande</div>
+    <h1>Décrivez votre besoin.</h1>
+    <p class="lede">Vous verrez un tarif fixe avant de valider quoi que ce soit. Vous ne payez qu'une fois un visiteur trouvé et la mission confirmée.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="mission-card" style="max-width:520px;">
+      <h2>Votre demande</h2>
+      <div class="field-row">
+        <label for="d-service">Service</label>
+        <select id="d-service">
+          <option>Ouverture à votre place</option>
+          <option>Photos à votre place</option>
+          <option>Vidéo à votre place</option>
+          <option>Photos + vidéo à votre place</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <label for="d-adresse">Ville et adresse</label>
+        <input id="d-adresse" type="text" placeholder="12 rue de la Paix, Bordeaux">
+      </div>
+      <div class="field-row field-pair">
+        <div>
+          <label for="d-date">Date</label>
+          <input id="d-date" type="date">
+        </div>
+        <div>
+          <label for="d-heure">Heure</label>
+          <input id="d-heure" type="time">
+        </div>
+      </div>
+      <div class="field-row">
+        <label for="d-duree">Durée estimée</label>
+        <select id="d-duree">
+          <option>30 minutes</option>
+          <option>1 heure</option>
+          <option>2 heures</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <label for="d-details">Détails de la mission</label>
+        <textarea id="d-details" placeholder="Précisez le contexte : qui doit intervenir, ce qu'il faut faire sur place, points d'attention…"></textarea>
+      </div>
+      <a href="recherche.html" class="btn btn-primary" style="width:100%; margin-top:22px;">Voir le tarif et continuer</a>
+    </div>
+
+    <div>
+      <h2 style="font-size:1.5rem;">Ce qui se passe ensuite</h2>
+      <ul class="list-clean" style="margin-top:18px;">
+        <li>Un tarif fixe s'affiche immédiatement selon le service et la durée choisis.</li>
+        <li>Vous choisissez un visiteur disponible ou laissez votre demande ouverte.</li>
+        <li>Le paiement n'intervient qu'une fois un visiteur validé — jamais avant.</li>
+        <li>Vous échangez ensuite via la messagerie interne jusqu'au jour J.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="brand" href="index.html">Sur Place <span>Pour Vous</span></a>
+    <ul class="footer-links">
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="comment-ca-marche.html">Fonctionnement</a></li>
+      <li><a href="devenir-visiteur.html">Devenir visiteur</a></li>
+      <li><a href="villes.html">Villes</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© 2026 Sur Place Pour Vous — « Quelqu'un peut être là pour vous. »</div>
+</footer>
+</body>
+</html>
